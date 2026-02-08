@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="it">
 <head>
 <meta charset="UTF-8">
-<title>Pour toi ❤️</title>
+<title>Per Te ❤️</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script src="https://cdn.tailwindcss.com"></script>
@@ -22,43 +22,43 @@ body {
 
 <body class="flex items-center justify-center min-h-screen text-rose-900">
 
-<!-- PAGE 1 -->
+<!-- FACCIA 1 -->
 <section id="page1" class="glass p-10 rounded-3xl text-center max-w-xl">
-  <h1 class="text-4xl font-bold mb-6">Mon amour ❤️</h1>
+  <h1 class="text-4xl font-bold mb-6">Amore mio ❤️</h1>
   <p class="text-lg mb-8">
-    J’ai créé ce petit endroit juste pour toi,  
-    parce que parfois les mots ne suffisent pas  
-    pour dire à quel point tu comptes pour moi.
+    Ho creato questo piccolo spazio solo per te,  
+    perché le parole a volte non bastano  
+    per dire quanto sei importante per me.
   </p>
   <button onclick="goTo(2)"
     class="px-6 py-3 bg-rose-400 text-white rounded-full hover:scale-105 transition">
-    Continuer
+    Continua
   </button>
 </section>
 
-<!-- PAGE 2 -->
+<!-- FACCIA 2 -->
 <section id="page2" class="hidden glass p-10 rounded-3xl text-center max-w-xl">
-  <h2 class="text-3xl font-bold mb-6">À quel point tu m’aimes ? 🌸</h2>
+  <h2 class="text-3xl font-bold mb-6">Quanto mi vuoi bene? 🌸</h2>
 
-  <p class="mb-4">Chaque réponse ajoute de l’amour au bouquet</p>
+  <p class="mb-4">Ogni risposta aggiunge amore al bouquet</p>
 
   <div class="text-5xl mb-4" id="flowers">🌷</div>
-  <p class="mb-4">Fleurs : <span id="count">0</span> / 10</p>
+  <p class="mb-4">Fiori: <span id="count">0</span> / 10</p>
 
   <div class="flex justify-center gap-4 mb-6">
     <button id="yesBtn" onclick="addFlower(1)"
       class="px-5 py-2 bg-green-400 text-white rounded-full transition">
-      OUI
+      SI
     </button>
 
     <button onclick="addFlower(2)"
       class="px-5 py-2 bg-pink-400 text-white rounded-full">
-      ENCORE PLUS
+      DI PIÙ
     </button>
 
     <button id="noBtn" onclick="sayNo()"
       class="px-5 py-2 bg-gray-400 text-white rounded-full transition">
-      NON
+      NO
     </button>
   </div>
 
@@ -68,17 +68,17 @@ body {
 
   <button id="nextGift" onclick="goTo(3)"
     class="hidden mt-6 px-6 py-3 bg-rose-500 text-white rounded-full">
-    Continuer 💝
+    Continua 💝
   </button>
 </section>
 
-<!-- PAGE 3 -->
+<!-- FACCIA 3 -->
 <section id="page3" class="hidden glass p-10 rounded-3xl text-center max-w-xl">
-  <h2 class="text-3xl font-bold mb-6">Prends ton cadeau 🎁</h2>
+  <h2 class="text-3xl font-bold mb-6">Prendi il tuo regalo 🎁</h2>
 
   <button onclick="showGift()"
     class="px-6 py-3 bg-rose-400 text-white rounded-full mb-6">
-    Prends ton cadeau
+    Prendi il tuo regalo
   </button>
 
   <img id="gift" class="hidden mx-auto rounded-xl shadow-lg mb-6"
@@ -130,7 +130,7 @@ function startCountdown() {
     const m = Math.floor((d / (1000*60)) % 60);
     const s = Math.floor((d / 1000) % 60);
     document.getElementById("countdown").innerText =
-      `Il reste ${h}h ${m}m ${s}s avant la Saint-Valentin 💘`;
+      `Manca ${h}h ${m}m ${s}s a San Valentino 💘`;
   }, 1000);
 }
 </script>
